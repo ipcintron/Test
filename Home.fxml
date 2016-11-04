@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Home">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4b5b5" height="40.0" layoutX="128.0" smooth="false" stroke="BLACK" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" width="1152.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Rectangle>
+      <Pane prefHeight="78.0" prefWidth="148.0" style="-fx-background-color: #253582;">
+         <children>
+            <Text fill="WHITE" layoutX="11.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mark Foox">
+               <font>
+                  <Font name="Roboto Bold" size="15.0" />
+               </font>
+            </Text>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Pane layoutY="78.0" prefHeight="642.0" prefWidth="148.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="78.0">
+         <children>
+            <GridPane layoutY="23.0" prefHeight="619.0" prefWidth="148.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text fill="#5e5b5d" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="Roboto Bold" size="17.0" />
+                     </font>
+                  </Text>
+                  <SVGPath content="M0.5,1.056h0.444V0.5H0.5V1.056z M0.5,1.5h0.444V1.167H0.5V1.5z M1.056,1.5H1.5V0.944H1.056V1.5z M1.056,0.5  v0.333H1.5V0.5H1.056z" fill="#5E5B5D" scaleX="23.0" scaleY="23.0" GridPane.columnIndex="2" />
+                  <SVGPath content="M1.409,0.682v0.636H1.5V0.682H1.409z M1.227,1.318h0.091V0.682H1.227V1.318z M1.091,0.682H0.545  C0.52,0.682,0.5,0.702,0.5,0.727v0.545c0,0.025,0.02,0.045,0.045,0.045h0.545c0.025,0,0.045-0.02,0.045-0.045V0.727  C1.136,0.702,1.116,0.682,1.091,0.682z M0.818,0.807c0.056,0,0.102,0.046,0.102,0.102c0,0.056-0.046,0.102-0.102,0.102  S0.716,0.965,0.716,0.909C0.716,0.853,0.762,0.807,0.818,0.807z M1.023,1.227H0.614V1.193c0-0.068,0.136-0.102,0.205-0.102  s0.205,0.034,0.205,0.102V1.227z" fill="#5E5B5D" scaleX="27.0" scaleY="27.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Text fill="#5e5b5d" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Roboto Bold" size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#5e5b5d" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Leases" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Roboto Bold" size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#5e5b5d" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Devices" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Roboto Bold" size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#5e5b5d" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Employees" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Roboto Bold" size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#5e5b5d" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Reports" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Roboto Bold" size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#5e5b5d" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Settings" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Roboto Bold" size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#5e5b5d" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Logout" GridPane.columnIndex="4" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Roboto Bold" size="17.0" />
+                     </font>
+                  </Text>
+                  <SVGPath content="M1.35,0.6H1.141C1.12,0.542,1.065,0.5,1,0.5S0.88,0.542,0.859,0.6H0.65c-0.055,0-0.1,0.045-0.1,0.1v0.7  c0,0.055,0.045,0.1,0.1,0.1h0.7c0.055,0,0.1-0.045,0.1-0.1V0.7C1.45,0.645,1.405,0.6,1.35,0.6z M1,0.6c0.028,0,0.05,0.022,0.05,0.05  C1.05,0.678,1.028,0.7,1,0.7S0.95,0.678,0.95,0.65C0.95,0.623,0.972,0.6,1,0.6z M1.1,1.3H0.75V1.2H1.1V1.3z M1.25,1.1h-0.5V1h0.5  V1.1z M1.25,0.9h-0.5V0.8h0.5V0.9z" fill="#5E5B5D" scaleX="23.0" scaleY="23.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <SVGPath content="M1.35,0.8h-0.7C0.567,0.8,0.5,0.867,0.5,0.95v0.3h0.2v0.2h0.6v-0.2h0.2v-0.3C1.5,0.867,1.433,0.8,1.35,0.8z   M1.2,1.35H0.8V1.1h0.4V1.35z M1.35,1C1.322,1,1.3,0.978,1.3,0.95c0-0.027,0.023-0.05,0.05-0.05c0.027,0,0.05,0.023,0.05,0.05  C1.4,0.978,1.377,1,1.35,1z M1.3,0.55H0.7v0.2h0.6V0.55z" fill="#5E5B5D" scaleX="23.0" scaleY="23.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <SVGPath content="M0.9,0.875c0-0.069-0.056-0.125-0.125-0.125S0.65,0.806,0.65,0.875S0.706,1,0.775,1S0.9,0.944,0.9,0.875z   M1.3,0.8c0-0.083-0.067-0.15-0.15-0.15C1.067,0.65,1,0.717,1,0.8s0.067,0.15,0.15,0.15C1.233,0.95,1.3,0.883,1.3,0.8z M0.5,1.237  V1.35h0.55V1.237C1.05,1.146,0.867,1.1,0.775,1.1S0.5,1.146,0.5,1.237z M1.031,1.064C1.133,1.12,1.15,1.195,1.15,1.237V1.35H1.5  V1.225c0-0.117-0.234-0.175-0.35-0.175C1.117,1.05,1.075,1.055,1.031,1.064z" fill="#5E5B5D" scaleX="23.0" scaleY="23.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <SVGPath content="M1.1,0.5H0.7c-0.055,0-0.1,0.045-0.1,0.1l0,0.8c0,0.055,0.044,0.1,0.099,0.1h0.6c0.055,0,0.1-0.045,0.1-0.1  V0.8L1.1,0.5z M1.2,1.3H0.8V1.2h0.4V1.3z M1.2,1.1H0.8V1h0.4V1.1z M1.05,0.85V0.575L1.325,0.85H1.05z" fill="#5E5B5D" scaleX="23.0" scaleY="23.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <SVGPath content="M1.372,1.049C1.374,1.033,1.375,1.017,1.375,1c0-0.017-0.002-0.033-0.003-0.049l0.106-0.083  c0.01-0.007,0.012-0.021,0.006-0.032l-0.1-0.173c-0.006-0.011-0.02-0.015-0.031-0.011l-0.125,0.05  c-0.026-0.02-0.054-0.036-0.084-0.049L1.125,0.521C1.123,0.509,1.113,0.5,1.1,0.5H0.9c-0.012,0-0.023,0.009-0.024,0.021L0.857,0.654  c-0.03,0.012-0.059,0.03-0.085,0.049l-0.125-0.05c-0.012-0.005-0.025,0-0.03,0.011l-0.1,0.173C0.511,0.848,0.514,0.861,0.523,0.869  l0.106,0.082C0.627,0.967,0.625,0.984,0.625,1c0,0.017,0.002,0.033,0.004,0.049L0.523,1.132C0.514,1.139,0.511,1.153,0.517,1.164  l0.1,0.173c0.006,0.011,0.02,0.015,0.03,0.011l0.125-0.05c0.026,0.02,0.054,0.036,0.085,0.049l0.019,0.132  C0.877,1.491,0.888,1.5,0.9,1.5h0.2c0.013,0,0.023-0.009,0.025-0.021l0.019-0.132c0.03-0.013,0.058-0.03,0.084-0.049l0.125,0.05  c0.012,0.005,0.025,0,0.031-0.011l0.1-0.173c0.006-0.011,0.003-0.025-0.006-0.032L1.372,1.049z M0.99,1.175  C0.894,1.169,0.82,1.086,0.825,0.99S0.914,0.82,1.01,0.825S1.18,0.914,1.175,1.01S1.086,1.18,0.99,1.175z" fill="#5E5B5D" scaleX="23.0" scaleY="23.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                  <SVGPath content="M1.056,0.5H0.944v0.556h0.111V0.5z M1.324,0.621L1.245,0.699C1.333,0.77,1.389,0.878,1.389,1  c0,0.215-0.174,0.389-0.389,0.389S0.611,1.215,0.611,1c0-0.122,0.056-0.23,0.143-0.301L0.676,0.621C0.568,0.712,0.5,0.848,0.5,1  c0,0.276,0.224,0.5,0.5,0.5S1.5,1.276,1.5,1C1.5,0.848,1.432,0.712,1.324,0.621z" fill="#5E5B5D" scaleX="23.0" scaleY="23.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+               </children>
+            </GridPane>
+         </children>
+         <effect>
+            <DropShadow height="0.0" radius="4.75" />
+         </effect>
+      </Pane>
+      <JFXHamburger layoutX="14.0" layoutY="10.0">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </JFXHamburger>
+      <Text layoutX="174.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home">
+         <font>
+            <Font name="Roboto Regular" size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="52.0" fitWidth="48.0" layoutX="1218.0" layoutY="658.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ChangesButton.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="1222.0" layoutY="602.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@AddButton.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Pane layoutX="217.0" layoutY="63.0" prefHeight="609.0" prefWidth="974.0" style="-fx-background-color: #ffffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <SVGPath content="M0.839,1.094v0.067h0.067l0.197-0.197L1.037,0.896L0.839,1.094z M1.156,0.911c0.007-0.007,0.007-0.018,0-0.025L1.114,0.844c-0.007-0.007-0.018-0.007-0.025,0L1.056,0.877l0.067,0.067L1.156,0.911z" layoutX="1222.0" layoutY="423.0" scaleX="23.0" scaleY="23.0" />
+      <SVGPath content="M0.839,1.094v0.067h0.067l0.197-0.197L1.037,0.896L0.839,1.094z M1.156,0.911
+			c0.007-0.007,0.007-0.018,0-0.025L1.114,0.844c-0.007-0.007-0.018-0.007-0.025,0L1.056,0.877l0.067,0.067L1.156,0.911z" layoutX="1194.0" layoutY="314.0" scaleX="50.0" scaleY="50.0" />
+   </children>
+</AnchorPane>
