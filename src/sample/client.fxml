@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="532.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.client">
+   <children>
+      <JFXButton fx:id="save" buttonType="RAISED" layoutX="387.0" layoutY="346.0" onAction="#makesave" style="-fx-background-color: #4059a9;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="Roboto Regular" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="clear" buttonType="RAISED" layoutX="456.0" layoutY="346.0" onAction="#makeclear" style="-fx-background-color: #4059a9;" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="Roboto Regular" size="13.0" />
+         </font>
+      </JFXButton>
+      <GridPane layoutX="18.0" layoutY="76.0" prefHeight="204.0" prefWidth="65.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Client ID" textAlignment="RIGHT">
+               <font>
+                  <Font name="Roboto Regular" size="12.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="First Name" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Roboto Regular" size="12.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Company" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Roboto Regular" size="12.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Address" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Roboto Regular" size="12.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="City" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Roboto Regular" size="12.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Phone" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Roboto Regular" size="12.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Roboto Regular" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </GridPane>
+      <GridPane layoutX="315.0" layoutY="146.0" prefHeight="25.0" prefWidth="32.0">
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <GridPane layoutX="277.0" layoutY="121.0" prefHeight="25.0" prefWidth="32.0">
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <GridPane layoutX="424.0" layoutY="106.0" prefHeight="25.0" prefWidth="32.0">
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Text layoutX="331.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+         <font>
+            <Font name="Roboto Regular" size="12.0" />
+         </font>
+      </Text>
+      <TextField layoutX="257.0" layoutY="107.0" prefHeight="25.0" prefWidth="39.0">
+         <font>
+            <Font name="Roboto Regular" size="12.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="400.0" layoutY="107.0" prefHeight="25.0" prefWidth="109.0">
+         <font>
+            <Font name="Roboto Regular" size="12.0" />
+         </font>
+      </TextField>
+      <Text layoutX="228.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="M.I.">
+         <font>
+            <Font name="Roboto Regular" size="12.0" />
+         </font>
+      </Text>
+      <TextField editable="false" layoutX="91.0" layoutY="78.0" prefHeight="25.0" prefWidth="65.0">
+         <font>
+            <Font name="Roboto Regular" size="12.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="91.0" layoutY="107.0" prefHeight="25.0" prefWidth="109.0">
+         <font>
+            <Font name="Roboto Regular" size="12.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="91.0" layoutY="137.0" prefHeight="25.0" prefWidth="418.0">
+         <font>
+            <Font name="Roboto Regular" size="12.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="91.0" layoutY="167.0" prefHeight="25.0" prefWidth="418.0">
+         <font>
+            <Font name="Roboto Regular" size="12.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="91.0" layoutY="226.0" prefHeight="25.0" prefWidth="115.0">
+         <font>
+            <Font name="Roboto Regular" size="12.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="91.0" layoutY="196.0" prefHeight="25.0" prefWidth="93.0">
+         <font>
+            <Font name="Roboto Regular" size="12.0" />
+         </font>
+      </TextField>
+      <Text layoutX="241.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="State">
+         <font>
+            <Font name="Roboto Regular" size="12.0" />
+         </font>
+      </Text>
+      <TextField layoutX="432.0" layoutY="198.0" prefHeight="25.0" prefWidth="76.0">
+         <font>
+            <Font name="Roboto Regular" size="12.0" />
+         </font>
+      </TextField>
+      <Text layoutX="374.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zip Code">
+         <font>
+            <Font name="Roboto Regular" size="12.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="state" layoutX="272.0" layoutY="198.0" prefHeight="25.0" prefWidth="48.0" />
+      <TextField layoutX="91.0" layoutY="255.0" prefHeight="25.0" prefWidth="172.0">
+         <font>
+            <Font name="Roboto Regular" size="12.0" />
+         </font>
+      </TextField>
+      <Text layoutX="19.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client Type">
+         <font>
+            <Font name="Roboto Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="19.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client Status">
+         <font>
+            <Font name="Roboto Regular" size="12.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SLATEBLUE" height="52.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="532.0" />
+      <Text fill="WHITE" layoutX="18.0" layoutY="36.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client Form">
+         <font>
+            <Font name="Roboto Regular" size="28.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="cltype" layoutX="91.0" layoutY="290.0" prefHeight="25.0" prefWidth="109.0" />
+      <ComboBox fx:id="clst" layoutX="91.0" layoutY="325.0" prefHeight="25.0" prefWidth="65.0" />
+   </children>
+</Pane>
