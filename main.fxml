@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController">
+   <children>
+      <VBox alignment="CENTER" layoutX="-8.0" prefHeight="400.0" prefWidth="600.0" spacing="13.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="CIS 2348 Exam 2 Practice" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="instructionsButton" mnemonicParsing="false" onAction="#openInstructions" prefHeight="26.0" prefWidth="178.0" text="Open Instructions" />
+            <Text layoutX="100.0" lineSpacing="6.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Implement the code for each button to perform that task described in the exam instructions.." wrappingWidth="374.698974609375">
+               <VBox.margin>
+                  <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+               </VBox.margin>
+            </Text>
+            <VBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Button fx:id="printEmployees" mnemonicParsing="false" onAction="#printEmployees" text="Print Employees to Console" />
+                  <Button fx:id="problem2Button" mnemonicParsing="false" onAction="#solved" text="Problem 2" />
+                  <Button fx:id="newEmployee" mnemonicParsing="false" onAction="#newEmployees" text="New Employee" />
+                  <Button mnemonicParsing="false" onAction="#calculateSum" text="Calculate Sum" />
+               </children>
+            </VBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label text="SUM:" />
+                  <Label fx:id="lblSum" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

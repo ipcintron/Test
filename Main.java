@@ -1,21 +1,25 @@
 package sample;
+
 import javafx.application.Application;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 
 import java.sql.*;
-
-import static javafx.application.Application.launch;
 
 /** This is just a sample Database connection and JDBC usage class.
  The design is no good and simply used for understanding what is happening.
  */
 public class Main extends Application{
 
-    public static void main(String args[]){
-    /* These variables I am just listing out so you get an idea of all the bits you need for a connection
+    public static void main(String args[]) throws SQLException{
+
+        // Testing without this code for now
+
+        /* These variables I am just listing out so you get an idea of all the bits you need for a connection
        in this example everything is sort of hard-coded. */
 
         String driverclassname = "net.sourceforge.jtds.jdbc.Driver";
@@ -162,15 +166,34 @@ public class Main extends Application{
             System.out.println("ERROR!! - In closing connection.");
             cCloseEx.printStackTrace();
         }
+        DbHelper dbHelper = DbHelper.getInstance();
+        dbHelper.init();
+
+        String rss = null;
+        final DbHelper2 app = new DbHelper2();
+
+        app.setClassName("net.sourceforge.jtds.jdbc.Driver");
+        app.setUsername("test");
+        app.setPassword("1534");
+        app.setURL("jdbc:jtds:sqlserver://localhost/DOBI");
+
+        app.connect();
+        rss = app.execute("INSERT INTO Employee_Type(Em_Type) VALUES ('Nurse')");
+        app.disconnect();
 launch(args);
     }
 
 
 
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("client.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
+        primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+            public void handle(WindowEvent event) {
+                DbHelper.getInstance().close();
+            }
+        });
     }
 }
 
