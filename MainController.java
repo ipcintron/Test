@@ -10,7 +10,9 @@ import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 public class MainController implements Initializable{
@@ -39,36 +41,54 @@ public class MainController implements Initializable{
     public void printEmployees(ActionEvent actionEvent) throws SQLException {
         //ObservableList<Employee_Type> list = FXCollections.observableArrayList();
 
-        // Establishes a connection to the database.
-        Connection conn = DbHelper.getInstance().getConnection();
-
-        // Creates a statement object.
-        Statement statement = conn.createStatement();
-
-        // A query which will show all records from the manager table.
-        String query = "select * from Employee_Type";
-
-        // Makes a the ResultSet "rs" equal to the query from the previous line of code.
-        ResultSet rs = statement.executeQuery(query);
+        final DbHelper2 app = new DbHelper2();
 
 
-        // The while loop will cycle through the ResultSet "rs" and add "name" and "salary" to the top of the ResultSet.
+        /*app.setClassName("net.sourceforge.jtds.jdbc.Driver");
+        app.setUsername("test");
+        app.setPassword("1534");
+        app.setURL("jdbc:jtds:sqlserver://localhost/DOBI");
+        String rss = null;
+        app.connect();
+        rss = app.execute("SELECT * FROM Employee_Type");
+        while (rss.next()) {
+            System.out.println(rss.getInt(1));
+            System.out.println(" " + rss.getString(2));
+        }
+            app.disconnect();*/
+
+
+            // Establishes a connection to the database.
+            //Connection conn = DbHelper.getInstance().getConnection();
+
+            // Creates a statement object.
+            //Statement statement = conn.createStatement();
+
+            // A query which will show all records from the manager table.
+            //String query = "select * from Employee_Type";
+
+            // Makes a the ResultSet "rs" equal to the query from the previous line of code.
+            //ResultSet rs = statement.executeQuery(query);
+
+
+            // The while loop will cycle through the ResultSet "rs" and add "name" and "salary" to the top of the ResultSet.
         /*while (rs.next()) {
             System.out.println(rs.getString());
         }*/
 
-        // Displays the data in dataTable.
-        //dataTable.setItems(list);
-        //System.out.println(query);
+            // Displays the data in dataTable.
+            //dataTable.setItems(list);
+            //System.out.println(query);
 
-        // Closes the result set.
-        rs.close();
+            // Closes the result set.
+            //rs.close();
 
-        // Terminates the connection to the database.
-        conn.close();
+            // Terminates the connection to the database.
+            //conn.close();
 
 
-    }
+        }
+
 
     // Answer to #2
     public void solved(ActionEvent actionEvent) throws Exception {

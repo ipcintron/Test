@@ -8,29 +8,29 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 
-import java.sql.*;
+import java.sql.SQLException;
 
 /** This is just a sample Database connection and JDBC usage class.
  The design is no good and simply used for understanding what is happening.
  */
 public class Main extends Application{
 
-    public static void main(String args[]) throws SQLException{
+    public static void main(String args[]) throws SQLException {
 
         // Testing without this code for now
 
         /* These variables I am just listing out so you get an idea of all the bits you need for a connection
        in this example everything is sort of hard-coded. */
 
-        String driverclassname = "net.sourceforge.jtds.jdbc.Driver";
+        /*String driverclassname = "net.sourceforge.jtds.jdbc.Driver";
             String servername = "localhost";
             int port = 1433;
             String databasename = "DOBI";
             String username = "test";
-            String password = "1534";
+            String password = "1534";*/
     /* the actual construction of the URL to be used will change from driver to driver and DB to DB.
        Check the driver specs for the URL format for your driver. */
-            String databaseurl = "jdbc:jtds:sqlserver://"+servername+":"+port;
+            /*String databaseurl = "jdbc:jtds:sqlserver://"+servername+":"+port;
             databaseurl +="/"+databasename+";user="+username+";password="+password;
             // here we load the driver. if the driver doesn't load then we quit because everything else is pointless
             try{
@@ -169,7 +169,7 @@ public class Main extends Application{
         DbHelper dbHelper = DbHelper.getInstance();
         dbHelper.init();
 
-        String rss = null;
+        /*String rss = null;
         final DbHelper2 app = new DbHelper2();
 
         app.setClassName("net.sourceforge.jtds.jdbc.Driver");
@@ -178,15 +178,15 @@ public class Main extends Application{
         app.setURL("jdbc:jtds:sqlserver://localhost/DOBI");
 
         app.connect();
-        rss = app.execute("INSERT INTO Employee_Type(Em_Type) VALUES ('Nurse')");
-        app.disconnect();
+        app.execute("INSERT INTO Employee_Type(Em_Type) VALUES ('Corn')");
+        app.disconnect();*/
 launch(args);
     }
 
 
 
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("client.fxml"));
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
         primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {

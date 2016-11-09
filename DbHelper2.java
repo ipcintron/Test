@@ -32,9 +32,15 @@ public class DbHelper2
     }
 
     public String execute(String statement) throws SQLException {
-        connection.prepareStatement(statement).executeQuery();
+        connection.prepareStatement(statement).executeUpdate();
         return statement;
     }
+
+    /*public PreparedStatement executeU(String statement) throws SQLException {
+        connection.prepareStatement(statement).executeUpdate();
+        return statement;
+
+    }*/
 
     public void disconnect() throws SQLException {
         if ( connection != null ) {

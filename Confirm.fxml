@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.*?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="248.0" prefWidth="322.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Confirm">
+    <children>
+        <JFXButton fx:id="yesButton" buttonType="RAISED" layoutX="48.0" layoutY="171.0" onMouseClicked="#submitChanges" prefHeight="33.0" prefWidth="70.0" style="-fx-background-color: SLATEBLUE;" text="Yes" textFill="WHITE">
+            <font>
+                <Font name="Roboto Regular" size="13.0" />
+            </font>
+        </JFXButton>
+        <GridPane layoutX="315.0" layoutY="146.0" prefHeight="25.0" prefWidth="32.0">
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+        </GridPane>
+        <GridPane layoutX="277.0" layoutY="121.0" prefHeight="25.0" prefWidth="32.0">
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+        </GridPane>
+        <GridPane layoutX="424.0" layoutY="106.0" prefHeight="25.0" prefWidth="32.0">
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+        </GridPane>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SLATEBLUE" height="52.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="322.0" />
+        <Text fill="WHITE" layoutX="18.0" layoutY="36.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm">
+            <font>
+                <Font name="Roboto Regular" size="28.0" />
+            </font>
+        </Text>
+      <JFXButton fx:id="noButton" buttonType="RAISED" layoutX="207.0" layoutY="171.0" onAction="#closeWindow" prefHeight="33.0" prefWidth="70.0" style="-fx-background-color: SLATEBLUE;" text="No" textFill="WHITE">
+         <font>
+            <Font name="Roboto Regular" size="13.0" />
+         </font>
+      </JFXButton>
+      <Text fx:id="confirmText" layoutX="19.0" layoutY="114.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Are you sure you want to submit the form?" textAlignment="CENTER" wrappingWidth="283.888671875">
+         <font>
+            <Font name="Roboto Regular" size="21.0" />
+         </font>
+      </Text>
+    </children>
+</Pane>
